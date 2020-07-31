@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>MkDocs Simple Gen - athackst/mkdocs-simple-plugin</title>
+  <title>Developers - athackst/mkdocs-simple-plugin</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "MkDocs Simple Gen";
-    var mkdocs_page_input_path = "docs/commandline.md";
+    var mkdocs_page_name = "Developers";
+    var mkdocs_page_input_path = "docs/plugin-developers.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -55,26 +55,23 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../action/">GitHub Action</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">MkDocs Simple Gen</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#command-line-options">Command line options</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#run-a-local-server">Run a local server</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../docker/">Docker</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../plugin/">MkDocs Simple Plugin</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../mkdocs-simple-gen/">MkDocs Simple Gen</a>
                     </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Mkdocs simple plugin</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../mkdocs_simple_plugin/">Development</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../mkdocs-simple-plugin/">MkDocs Simple Plugin</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Developers</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#local-install">Local install</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vscode">VSCode</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -102,7 +99,7 @@
         
       
     
-    <li>MkDocs Simple Gen</li>
+    <li>Developers</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -113,27 +110,32 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mkdocs-simple-gen">MkDocs Simple Gen<a class="headerlink" href="#mkdocs-simple-gen" title="Permanent link">&para;</a></h1>
-<p>A program that will automatically create a <code>mkdocs.yml</code> configuration file (only if needed) and optionally install dependencies, build, and serve the site.</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>Install the plugin with pip.</p>
-<pre class="highlight"><code class="language-bash">pip install mkdocs-simple-plugin</code></pre>
+                <h1 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h1>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>You will need to have <a href="https://www.mkdocs.org/">mkdocs</a> installed on your system.  I recommend installing it via pip to get the latest version.</p>
+<pre class="highlight"><code class="language-bash">sudo apt-get install python-pip
+pip install --upgrade pip --user
+pip install mkdocs --user</code></pre>
 
-<p><em>Python 3.x, 3.5, 3.6, 3.7, 3.8 supported.</em></p>
-<h3 id="command-line-options">Command line options<a class="headerlink" href="#command-line-options" title="Permanent link">&para;</a></h3>
-<p>See <code>--help</code></p>
-<pre class="highlight"><code class="language-txt">Usage: mkdocs_simple_gen [OPTIONS]
+<p>If you want to run the test suite, you&rsquo;ll also need &lsquo;bats&rsquo;</p>
+<pre class="highlight"><code class="language-bash">sudo apt-get install bats</code></pre>
 
-Options:
-  --build / --no-build      build the site using mkdocs build
-  --help                    Show this message and exit.</code></pre>
+<h2 id="local-install">Local install<a class="headerlink" href="#local-install" title="Permanent link">&para;</a></h2>
+<p>Install the package locally with</p>
+<pre class="highlight"><code class="language-bash">pip install -e .</code></pre>
 
-<p>default flags:</p>
-<pre class="highlight"><code class="language-bash">mkdocs_simple_gen --build</code></pre>
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>Testing involves both linting with flake8</p>
+<pre class="highlight"><code class="language-bash">./tests/test_flake8.sh</code></pre>
 
-<h3 id="run-a-local-server">Run a local server<a class="headerlink" href="#run-a-local-server" title="Permanent link">&para;</a></h3>
-<p>One of the best parts of mkdocs is it&rsquo;s ability to serve (and update!) your documentation site locally.</p>
-<pre class="highlight"><code class="language-bash">mkdocs serve</code></pre>
+<p>and testing with <code>bats</code></p>
+<pre class="highlight"><code class="language-bash">./tests/integration/test.bats</code></pre>
+
+<p>If you want to test against all the different versions of python, run the local test script.</p>
+<pre class="highlight"><code class="language-bash">./tests/test_local.sh</code></pre>
+
+<h2 id="vscode">VSCode<a class="headerlink" href="#vscode" title="Permanent link">&para;</a></h2>
+<p>Included in this package is a VSCode workspace and development container.  See <a href="https://www.allisonthackston.com/articles/docker_development.html">how I develop with vscode and docker</a> and <a href="https://www.allisonthackston.com/articles/vscode_tasks.html">how I use vscode tasks</a>.</p>
               
             </div>
           </div>
@@ -141,10 +143,8 @@ Options:
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../docker/" class="btn btn-neutral float-right" title="Docker">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../action/" class="btn btn-neutral" title="GitHub Action"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mkdocs-simple-plugin/" class="btn btn-neutral" title="MkDocs Simple Plugin"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -170,10 +170,8 @@ Options:
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../action/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../mkdocs-simple-plugin/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../docker/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
