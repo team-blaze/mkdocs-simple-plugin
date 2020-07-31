@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Reference - athackst/mkdocs-simple-plugin</title>
+  <title>Development - athackst/mkdocs-simple-plugin</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Reference";
+    var mkdocs_page_name = "Development";
     var mkdocs_page_input_path = "mkdocs_simple_plugin/README.md";
     var mkdocs_page_url = null;
   </script>
@@ -51,21 +51,24 @@
                     <li class="toctree-l1"><a class="reference internal" href="../CONTRIBUTING/">Contributing</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Docs</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/action/">GitHub Action</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/commandline/">MkDocs Simple Gen</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/docker/">Docker</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../docs/plugin/">MkDocs Simple Plugin</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Mkdocs simple plugin</span></p>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Reference</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Development</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#mkdocs-simple-plugin">mkdocs-simple-plugin</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#plugin-usage">Plugin usage</a>
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
     </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#mkdocs_simple_gen">mkdocs_simple_gen</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#command-line-options">Command line options</a>
-    </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a>
     </li>
     </ul>
                     </li>
@@ -95,7 +98,7 @@
         
       
     
-    <li>Reference</li>
+    <li>Development</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -106,49 +109,28 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h1>
-<p>This python package provides the following objects</p>
-<h2 id="mkdocs-simple-plugin">mkdocs-simple-plugin<a class="headerlink" href="#mkdocs-simple-plugin" title="Permanent link">&para;</a></h2>
-<p>A plugin to the mkdocs package that builds a documentation website from .md files interspersed with in your code</p>
-<p>Note: Files in the <code>docs_dir</code> (by default <code>docs</code>) will be merged with any other documentation in your repository.</p>
-<h3 id="plugin-usage">Plugin usage<a class="headerlink" href="#plugin-usage" title="Permanent link">&para;</a></h3>
-<p>Create a <code>mkdocs.yml</code> file in the root of your directory and add this plugin to it&rsquo;s plugin list.</p>
-<pre class="highlight"><code class="language-yaml">site_name: your_site_name
-plugins:
-  - simple:
-      # Optional setting to only include specific folders
-      include_folders: ["*"]
-      # Optional setting to ignore specific folders
-      ignore_folders: [""]
-      # Optional setting to specify if hidden folders should be ignored
-      ignore_hidden: True
-      # Optional setting to specify other extensions besides md files to be copied
-      include_extensions: [""]</code></pre>
+                <h1 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h1>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>You will need to have <a href="https://www.mkdocs.org/">mkdocs</a> installed on your system.  I recommend installing it via pip to get the latest version.</p>
+<pre class="highlight"><code class="language-bash">sudo apt-get install python-pip
+pip install --upgrade pip --user
+pip install mkdocs --user</code></pre>
 
-<h2 id="mkdocs_simple_gen">mkdocs_simple_gen<a class="headerlink" href="#mkdocs_simple_gen" title="Permanent link">&para;</a></h2>
-<p>A program that will automatically create a <code>mkdocs.yml</code> configuration file (only if needed) and optionally install dependencies, build, and serve the site.</p>
-<h3 id="command-line-options">Command line options<a class="headerlink" href="#command-line-options" title="Permanent link">&para;</a></h3>
-<p>See <code>--help</code></p>
-<pre class="highlight"><code class="language-txt">Usage: mkdocs_simple_gen [OPTIONS]
+<p>If you want to run the test suite, you&rsquo;ll also need &lsquo;bats&rsquo;</p>
+<pre class="highlight"><code class="language-bash">sudo apt-get install bats</code></pre>
 
-Options:
-  --build / --no-build      build the site using mkdocs build
-  --install / --no-install  install required packages listed in
-                            requirements.txt
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
+<p>Install the package locally with</p>
+<pre class="highlight"><code class="language-bash">pip install -e .</code></pre>
 
-  --serve / --no-serve      serve the site locally
-  --dev-addr TEXT           Local server address
-  --help                    Show this message and exit.</code></pre>
+<p>Testing involves both linting with flake8</p>
+<pre class="highlight"><code class="language-bash">./tests/test_flake8.sh</code></pre>
 
-<p>default flags:</p>
-<pre class="highlight"><code class="language-bash">mkdocs_simple_gen --build --no-install --no-serve</code></pre>
+<p>and testing with <code>bats</code></p>
+<pre class="highlight"><code class="language-bash">./tests/integration/test.bats</code></pre>
 
-<p>Flags are processed in the following order:</p>
-<ol>
-<li>install -&gt; to install needed packages from requirements.txt for building</li>
-<li>build -&gt; build the website</li>
-<li>serve -&gt; serve the site locally</li>
-</ol>
+<p>If you want to test against all the different versions of python, run the local test script.</p>
+<pre class="highlight"><code class="language-bash">./tests/test_local.sh</code></pre>
               
             </div>
           </div>
@@ -157,7 +139,7 @@ Options:
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="../CONTRIBUTING/" class="btn btn-neutral" title="Contributing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../docs/plugin/" class="btn btn-neutral" title="MkDocs Simple Plugin"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -183,7 +165,7 @@ Options:
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../CONTRIBUTING/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../docs/plugin/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>
