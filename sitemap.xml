@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://athackst.github.io/mkdocs-simple-plugin/</loc>
-     <lastmod>2020-09-20</lastmod>
+     <lastmod>2020-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://athackst.github.io/mkdocs-simple-plugin/CONTRIBUTING/</loc>
-     <lastmod>2020-09-20</lastmod>
+     <lastmod>2020-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://athackst.github.io/mkdocs-simple-plugin/docs/action/</loc>
-     <lastmod>2020-09-20</lastmod>
+     <lastmod>2020-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://athackst.github.io/mkdocs-simple-plugin/docs/docker/</loc>
-     <lastmod>2020-09-20</lastmod>
+     <lastmod>2020-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://athackst.github.io/mkdocs-simple-plugin/docs/mkdocs-simple-gen/</loc>
-     <lastmod>2020-09-20</lastmod>
+     <lastmod>2020-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://athackst.github.io/mkdocs-simple-plugin/docs/mkdocs-simple-plugin/</loc>
-     <lastmod>2020-09-20</lastmod>
+     <lastmod>2020-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://athackst.github.io/mkdocs-simple-plugin/docs/plugin-developers/</loc>
-     <lastmod>2020-09-20</lastmod>
+     <lastmod>2020-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

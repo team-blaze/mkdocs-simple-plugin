@@ -1,7 +1,4 @@
 
-
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -14,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
     
     
       
@@ -22,19 +19,21 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.077507d7.min.css">
-      
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ff0a5ce4.min.css">
-      
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bc7e593a.min.css">
       
         
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab28b872.min.css">
         
-        <meta name="theme-color" content="#4cae4f">
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
       
     
     
     
       
+        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -52,9 +51,11 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="green">
-  
     
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="green">
+      
+  
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -70,7 +71,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://athackst.github.io/mkdocs-simple-plugin" title="athackst/mkdocs-simple-plugin" class="md-header-nav__button md-logo" aria-label="athackst/mkdocs-simple-plugin">
       
@@ -145,8 +148,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -157,7 +158,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://athackst.github.io/mkdocs-simple-plugin" title="athackst/mkdocs-simple-plugin" class="md-nav__button md-logo" aria-label="athackst/mkdocs-simple-plugin">
       
@@ -189,7 +192,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="mkdocs-simple-plugin" class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       mkdocs-simple-plugin
     </a>
   </li>
@@ -201,7 +204,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../CONTRIBUTING/" title="Contributing" class="md-nav__link">
+    <a href="../../CONTRIBUTING/" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -236,7 +239,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../action/" title="GitHub Action" class="md-nav__link">
+    <a href="../action/" class="md-nav__link">
       GitHub Action
     </a>
   </li>
@@ -248,7 +251,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../docker/" title="Docker" class="md-nav__link">
+    <a href="../docker/" class="md-nav__link">
       Docker
     </a>
   </li>
@@ -260,7 +263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-simple-gen/" title="MkDocs Simple Gen" class="md-nav__link">
+    <a href="../mkdocs-simple-gen/" class="md-nav__link">
       MkDocs Simple Gen
     </a>
   </li>
@@ -272,7 +275,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-simple-plugin/" title="MkDocs Simple Plugin" class="md-nav__link">
+    <a href="../mkdocs-simple-plugin/" class="md-nav__link">
       MkDocs Simple Plugin
     </a>
   </li>
@@ -297,7 +300,7 @@
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Developers" class="md-nav__link md-nav__link--active">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Developers
     </a>
     
@@ -418,9 +421,6 @@
               
                 
                 
-                  
-                
-                
                 <h1 id="developers">Developers</h1>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>You will need to have <a href="https://www.mkdocs.org/">mkdocs</a> installed on your system.  I recommend installing it via pip to get the latest version.</p>
@@ -428,29 +428,23 @@
 pip install --upgrade pip --user
 pip install mkdocs --user
 </code></pre></div>
-
 <p>If you want to run the test suite, you'll also need 'bats'</p>
 <div class="highlight"><pre><span></span><code>sudo apt-get install bats
 </code></pre></div>
-
 <h2 id="local-install">Local install</h2>
 <p>Install the package locally with</p>
 <div class="highlight"><pre><span></span><code>pip install -e .
 </code></pre></div>
-
 <h2 id="testing">Testing</h2>
 <p>Testing involves both linting with flake8</p>
 <div class="highlight"><pre><span></span><code>./tests/test_flake8.sh
 </code></pre></div>
-
 <p>and testing with <code>bats</code></p>
 <div class="highlight"><pre><span></span><code>./tests/integration/test.bats
 </code></pre></div>
-
 <p>If you want to test against all the different versions of python, run the local test script.</p>
 <div class="highlight"><pre><span></span><code>./tests/test_local.sh
 </code></pre></div>
-
 <h2 id="vscode">VSCode</h2>
 <p>Included in this package is a VSCode workspace and development container.  See <a href="https://www.allisonthackston.com/articles/docker_development.html">how I develop with vscode and docker</a> and <a href="https://www.allisonthackston.com/articles/vscode_tasks.html">how I use vscode tasks</a>.</p>
                 
@@ -471,7 +465,7 @@ pip install mkdocs --user
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../mkdocs-simple-plugin/" title="MkDocs Simple Plugin" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mkdocs-simple-plugin/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -536,15 +530,15 @@ pip install mkdocs --user
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
-      <script src="../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
