@@ -7,22 +7,23 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://athackst.github.io/mkdocs-simple-plugin/docs/docker/">
+      
+        <link rel="canonical" href="https://athackst.github.io/mkdocs-simple-plugin/mkdocs_simple_plugin/">
       
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.4">
     
     
       
-        <title>Docker - athackst/mkdocs-simple-plugin</title>
+        <title>Developing - athackst/mkdocs-simple-plugin</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bc7e593a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.358818c7.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab28b872.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f0267088.min.css">
         
           
           
@@ -62,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker" class="md-skip">
+        <a href="#developing" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Docker
+              Developing
             
           </span>
         </div>
@@ -192,8 +193,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." class="md-nav__link">
-      mkdocs-simple-plugin
+    <a href=".." class="md-nav__link">
+      About
     </a>
   </li>
 
@@ -204,8 +205,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../CONTRIBUTING/" class="md-nav__link">
-      Contributing
+    <a href="generator/" class="md-nav__link">
+      Mkdocs Simple Generator
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="plugin/" class="md-nav__link">
+      Mkdocs Simple Plugin
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../action/" class="md-nav__link">
+      Github Action
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../docker/" class="md-nav__link">
+      Docker
     </a>
   </li>
 
@@ -219,31 +256,19 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
-    <label class="md-nav__link" for="nav-3">
-      Docs
+    <label class="md-nav__link" for="nav-6">
+      Developers
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Docs" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+    <nav class="md-nav" aria-label="Developers" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
-        Docs
+        Developers
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../action/" class="md-nav__link">
-      GitHub Action
-    </a>
-  </li>
-
         
           
           
@@ -260,12 +285,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Docker
+        Developing
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Docker
+      Developing
     </a>
     
       
@@ -282,15 +307,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#run-in-a-docker-container" class="md-nav__link">
-    Run in a docker container
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-up-an-command-line-alias" class="md-nav__link">
-    Set up an command line alias
+  <a href="#local-install" class="md-nav__link">
+    Local install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    VSCode
   </a>
   
 </li>
@@ -308,32 +347,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../mkdocs-simple-gen/" class="md-nav__link">
-      MkDocs Simple Gen
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../mkdocs-simple-plugin/" class="md-nav__link">
-      MkDocs Simple Plugin
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../plugin-developers/" class="md-nav__link">
-      Developers
+    <a href="../CONTRIBUTING/" class="md-nav__link">
+      Contributing Guide
     </a>
   </li>
 
@@ -367,15 +382,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#run-in-a-docker-container" class="md-nav__link">
-    Run in a docker container
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-up-an-command-line-alias" class="md-nav__link">
-    Set up an command line alias
+  <a href="#local-install" class="md-nav__link">
+    Local install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing" class="md-nav__link">
+    Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    VSCode
   </a>
   
 </li>
@@ -393,54 +422,32 @@
               
                 
                 
-                <h1 id="docker">Docker</h1>
-<p>Use this image to create a <a href="https://www.mkdocs.org/">mkdocs</a> site with the <a href="http://athackst.github.io/mkdocs-simple-plugin">mkdocs-simple-plugin</a></p>
-<p>By using the docker image, you don't need to have the plugin or its dependencies installed on your system in order to build, test, and deploy a mkdocs generated site.</p>
-<h2 id="run-in-a-docker-container">Run in a docker container</h2>
-<p>Install, build and serve your docs:</p>
-<div class="highlight"><pre><span></span><code>docker run --rm -it --network<span class="o">=</span>host -v <span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>:/docs --user <span class="k">$(</span>id -u<span class="k">)</span>:<span class="k">$(</span>id -g<span class="k">)</span> athackst/mkdocs-simple-plugin
+                <h1 id="developing">Developing</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>You will need to have <a href="https://www.mkdocs.org/">mkdocs</a> installed on your system.  I recommend installing it via pip to get the latest version.</p>
+<div class="highlight"><pre><span></span><code>sudo apt-get install python-pip
+pip install --upgrade pip --user
+pip install mkdocs --user
 </code></pre></div>
-<p>Explanation of docker command line options</p>
-<!-- markdownlint-disable MD038 -->
-<table>
-<thead>
-<tr>
-<th align="left">command</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>-p 8000:8000</code></td>
-<td align="left">[required] Map the mkdocs server port to a port on your localhost.</td>
-</tr>
-<tr>
-<td align="left"><code>-v ${PWD}:/docs</code></td>
-<td align="left">[required] Mount the local directory into the docs directory to build site.</td>
-</tr>
-<tr>
-<td align="left"><code>--user $(id -u):$(id -g)</code></td>
-<td align="left">[recommended] Run the docker container with the current user and group.</td>
-</tr>
-<tr>
-<td align="left"><code>--rm</code></td>
-<td align="left">[optional] remove the docker image after it finishes running.</td>
-</tr>
-<tr>
-<td align="left"><code>-it</code></td>
-<td align="left">[optional] run in an interactive terminal.</td>
-</tr>
-</tbody>
-</table>
-<!-- markdownlint-enable MD038 -->
-
-<p>The docker image by default runs <code>mkdocs serve</code>.</p>
-<h2 id="set-up-an-command-line-alias">Set up an command line alias</h2>
-<p>Add an alias for the docker command to serve docs from any workspace.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;function mkdocs_simple() { </span>
-<span class="s1">    docker run --rm -it --network=host -v ${PWD}:/docs --user $(id -u):$(id -g) athackst/mkdocs-simple-plugin $@ </span>
-<span class="s1">}&#39;</span> &gt;&gt; ~/.bashrc
+<p>If you want to run the test suite, you'll also need 'bats'</p>
+<div class="highlight"><pre><span></span><code>sudo apt-get install bats
 </code></pre></div>
+<h2 id="local-install">Local install</h2>
+<p>Install the package locally with</p>
+<div class="highlight"><pre><span></span><code>pip install -e .
+</code></pre></div>
+<h2 id="testing">Testing</h2>
+<p>Testing involves both linting with flake8</p>
+<div class="highlight"><pre><span></span><code>./tests/test_flake8.sh
+</code></pre></div>
+<p>and testing with <code>bats</code></p>
+<div class="highlight"><pre><span></span><code>./tests/integration/test.bats
+</code></pre></div>
+<p>If you want to test against all the different versions of python, run the local test script.</p>
+<div class="highlight"><pre><span></span><code>./tests/test_local.sh
+</code></pre></div>
+<h2 id="vscode">VSCode</h2>
+<p>Included in this package is a VSCode workspace and development container.  See <a href="https://www.allisonthackston.com/articles/docker_development.html">how I develop with vscode and docker</a> and <a href="https://www.allisonthackston.com/articles/vscode_tasks.html">how I use vscode tasks</a>.</p>
                 
               
               
@@ -459,7 +466,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../action/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../docker/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -468,19 +475,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                GitHub Action
+                Docker
               </div>
             </div>
           </a>
         
         
-          <a href="../mkdocs-simple-gen/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../CONTRIBUTING/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                MkDocs Simple Gen
+                Contributing Guide
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -538,15 +545,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.6a3d08fc.min.js"></script>
-      <script src="../../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../assets/javascripts/bundle.b3a72adc.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
