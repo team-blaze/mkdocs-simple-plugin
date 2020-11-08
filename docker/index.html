@@ -279,8 +279,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-up-an-command-line-alias" class="md-nav__link">
-    Set up an command line alias
+  <a href="#set-up-a-command-line-alias" class="md-nav__link">
+    Set up a command-line alias
   </a>
   
 </li>
@@ -373,8 +373,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-up-an-command-line-alias" class="md-nav__link">
-    Set up an command line alias
+  <a href="#set-up-a-command-line-alias" class="md-nav__link">
+    Set up a command-line alias
   </a>
   
 </li>
@@ -399,7 +399,7 @@
 <p>Install, build and serve your docs:</p>
 <div class="highlight"><pre><span></span><code>docker run --rm -it --network<span class="o">=</span>host -v <span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>:/docs --user <span class="k">$(</span>id -u<span class="k">)</span>:<span class="k">$(</span>id -g<span class="k">)</span> athackst/mkdocs-simple-plugin
 </code></pre></div>
-<p>Explanation of docker command line options</p>
+<p>Explanation of docker command-line options</p>
 <!-- markdownlint-disable MD038 -->
 <table>
 <thead>
@@ -434,7 +434,7 @@
 <!-- markdownlint-enable MD038 -->
 
 <p>The docker image by default runs <code>mkdocs serve</code>.</p>
-<h2 id="set-up-an-command-line-alias">Set up an command line alias</h2>
+<h2 id="set-up-a-command-line-alias">Set up a command-line alias</h2>
 <p>Add an alias for the docker command to serve docs from any workspace.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;function mkdocs_simple() { </span>
 <span class="s1">    docker run --rm -it --network=host -v ${PWD}:/docs --user $(id -u):$(id -g) athackst/mkdocs-simple-plugin $@ </span>
