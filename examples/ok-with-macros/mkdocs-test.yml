@@ -1,0 +1,11 @@
+site_name: ok-with-macros
+docs_dir: /tmp/mkdocs-simple/ok-with-macros/docs
+plugins:
+- search: null
+- simple:
+    include_extensions:
+      - '.yml'
+- macros:
+    verbose: True
+extra:
+    test: True
