@@ -11,8 +11,8 @@
       
         <link rel="canonical" href="https://athackst.github.io/mkdocs-simple-plugin/mkdocs_simple_plugin/plugin/">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
     
     
       
@@ -20,10 +20,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2c0c5eaf.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
         
           
           
@@ -37,10 +37,12 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
     
       
@@ -73,27 +75,25 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://athackst.github.io/mkdocs-simple-plugin" title="athackst/mkdocs-simple-plugin" class="md-header-nav__button md-logo" aria-label="athackst/mkdocs-simple-plugin">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="athackst/mkdocs-simple-plugin" class="md-header__button md-logo" aria-label="athackst/mkdocs-simple-plugin" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      <div class="md-header-nav__ellipsis">
-        <div class="md-header-nav__topic">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
           <span class="md-ellipsis">
             athackst/mkdocs-simple-plugin
           </span>
         </div>
-        <div class="md-header-nav__topic">
+        <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
               Mkdocs Simple Plugin
@@ -102,9 +102,12 @@
         </div>
       </div>
     </div>
+    <div class="md-header__options">
+      
+    </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
@@ -113,10 +116,10 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
@@ -134,12 +137,12 @@
 </div>
     
     
-      <div class="md-header-nav__source">
+      <div class="md-header__source">
         
-<a href="https://github.com/athackst/mkdocs-simple-plugin" title="Go to repository" class="md-source">
+<a href="https://github.com/athackst/mkdocs-simple-plugin" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -160,20 +163,18 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
-
-
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://athackst.github.io/mkdocs-simple-plugin" title="athackst/mkdocs-simple-plugin" class="md-nav__button md-logo" aria-label="athackst/mkdocs-simple-plugin">
+    <a href="../.." title="athackst/mkdocs-simple-plugin" class="md-nav__button md-logo" aria-label="athackst/mkdocs-simple-plugin" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
     athackst/mkdocs-simple-plugin
@@ -181,10 +182,10 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/athackst/mkdocs-simple-plugin" title="Go to repository" class="md-source">
+<a href="https://github.com/athackst/mkdocs-simple-plugin" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -222,19 +223,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
-      <label class="md-nav__link" for="nav-2">
+      <label class="md-nav__link" for="__nav_2">
         Mkdocs Simple
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Mkdocs Simple" data-md-level="1">
-        <label class="md-nav__title" for="nav-2">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Mkdocs Simple
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
           
             
   
@@ -281,7 +281,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#installation" class="md-nav__link">
@@ -291,30 +291,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    Quick start
+  <a href="#settings" class="md-nav__link">
+    Settings
   </a>
   
-    <nav class="md-nav" aria-label="Quick start">
+    <nav class="md-nav" aria-label="Settings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuration-file" class="md-nav__link">
-    Configuration file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build" class="md-nav__link">
-    Build
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-a-local-server" class="md-nav__link">
-    Run a local server
+  <a href="#defaults" class="md-nav__link">
+    Defaults
   </a>
   
 </li>
@@ -361,6 +347,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#build_docs_dir" class="md-nav__link">
+    build_docs_dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#include_extensions" class="md-nav__link">
     include_extensions
   </a>
@@ -387,8 +380,7 @@
     destination
   </a>
   
-    <nav class="md-nav" aria-label="destination">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#terminate" class="md-nav__link">
@@ -431,15 +423,44 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
-  <a href="#standard-behavior" class="md-nav__link">
-    Standard behavior
+  <a href="#semiliterate-example-usage" class="md-nav__link">
+    Semiliterate example usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Semiliterate example usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#c-c-and-javascript" class="md-nav__link">
+    C, C++, and Javascript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml-and-dockerfiles" class="md-nav__link">
+    YAML and Dockerfiles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-and-xml" class="md-nav__link">
+    HTML and xml
+  </a>
   
 </li>
         
@@ -454,8 +475,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#default-configuration" class="md-nav__link">
-    Default configuration
+  <a href="#build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-a-local-server" class="md-nav__link">
+    Run a local server
   </a>
   
 </li>
@@ -527,156 +555,49 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
-      <label class="md-nav__link" for="nav-5">
+      <label class="md-nav__link" for="__nav_5">
         Examples
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Examples" data-md-level="1">
-        <label class="md-nav__title" for="nav-5">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Examples
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" >
-      
-      <label class="md-nav__link" for="nav-5-1">
-        Ok mkdocs docs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok mkdocs docs" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-1">
-          <span class="md-nav__icon md-icon"></span>
-          Ok mkdocs docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-1-1" type="checkbox" id="nav-5-1-1" >
-      
-      <label class="md-nav__link" for="nav-5-1-1">
-        Docs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Docs" data-md-level="3">
-        <label class="md-nav__title" for="nav-5-1-1">
-          <span class="md-nav__icon md-icon"></span>
-          Docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
             
   
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs/docs/" class="md-nav__link">
-        Just a docs folder
+      <a href="../../examples/ok-mkdocs-readme" class="md-nav__link">
+        Simple readme
       </a>
     </li>
   
 
           
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" >
-      
-      <label class="md-nav__link" for="nav-5-2">
-        Ok mkdocs docs extensions
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok mkdocs docs extensions" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-2">
-          <span class="md-nav__icon md-icon"></span>
-          Ok mkdocs docs extensions
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
             
   
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-extensions/" class="md-nav__link">
-        Include an extra extension
+      <a href="../../examples/ok-mkdocs-docs/docs" class="md-nav__link">
+        Docs folder
       </a>
     </li>
   
 
           
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3" >
-      
-      <label class="md-nav__link" for="nav-5-3">
-        Ok mkdocs docs ignore
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok mkdocs docs ignore" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-3">
-          <span class="md-nav__icon md-icon"></span>
-          Ok mkdocs docs ignore
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
             
   
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-ignore/" class="md-nav__link">
+      <a href="../../examples/ok-mkdocs-docs-ignore" class="md-nav__link">
         Ignore a folder
       </a>
     </li>
@@ -688,42 +609,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-ignore/test/" class="md-nav__link">
-        Test
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-3-3" type="checkbox" id="nav-5-3-3" >
-      
-      <label class="md-nav__link" for="nav-5-3-3">
-        Subfolder
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Subfolder" data-md-level="3">
-        <label class="md-nav__title" for="nav-5-3-3">
-          <span class="md-nav__icon md-icon"></span>
-          Subfolder
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-ignore/subfolder/" class="md-nav__link">
-        Hello World
+      <a href="../../examples/ok-mkdocs-docs-extensions" class="md-nav__link">
+        Extra extensions
       </a>
     </li>
   
@@ -734,54 +621,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-ignore/subfolder/draft/" class="md-nav__link">
-        Draft
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4" type="checkbox" id="nav-5-4" >
-      
-      <label class="md-nav__link" for="nav-5-4">
-        Ok mkdocs docs include
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok mkdocs docs include" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-4">
-          <span class="md-nav__icon md-icon"></span>
-          Ok mkdocs docs include
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-include/" class="md-nav__link">
-        Only include a subfolder
+      <a href="../../examples/ok-mkdocs-docs-include" class="md-nav__link">
+        Only include a specific folder
       </a>
     </li>
   
@@ -792,42 +633,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-include/test/" class="md-nav__link">
-        Test
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-4-3" type="checkbox" id="nav-5-4-3" >
-      
-      <label class="md-nav__link" for="nav-5-4-3">
-        Subfolder
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Subfolder" data-md-level="3">
-        <label class="md-nav__title" for="nav-5-4-3">
-          <span class="md-nav__icon md-icon"></span>
-          Subfolder
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-include/subfolder/" class="md-nav__link">
-        Hello World
+      <a href="../../examples/ok-mkdocs-docs-merge" class="md-nav__link">
+        Merge into docs folder
       </a>
     </li>
   
@@ -838,54 +645,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-include/subfolder/draft/" class="md-nav__link">
-        Draft
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-5" type="checkbox" id="nav-5-5" >
-      
-      <label class="md-nav__link" for="nav-5-5">
-        Ok mkdocs docs merge
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok mkdocs docs merge" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-5">
-          <span class="md-nav__icon md-icon"></span>
-          Ok mkdocs docs merge
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-merge/" class="md-nav__link">
-        Merge docs folder with other docs
+      <a href="../../examples/ok-mkdocs-docs-no-merge" class="md-nav__link">
+        Don't merge docs folder
       </a>
     </li>
   
@@ -896,42 +657,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-merge/test/" class="md-nav__link">
-        Test
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-5-3" type="checkbox" id="nav-5-5-3" >
-      
-      <label class="md-nav__link" for="nav-5-5-3">
-        Docs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Docs" data-md-level="3">
-        <label class="md-nav__title" for="nav-5-5-3">
-          <span class="md-nav__icon md-icon"></span>
-          Docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-merge/docs/" class="md-nav__link">
-        Hello World
+      <a href="../../examples/ok-with-rename" class="md-nav__link">
+        Rename a file
       </a>
     </li>
   
@@ -942,54 +669,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-merge/docs/draft/" class="md-nav__link">
-        Draft
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-6" type="checkbox" id="nav-5-6" >
-      
-      <label class="md-nav__link" for="nav-5-6">
-        Ok mkdocs docs no merge
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok mkdocs docs no merge" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-6">
-          <span class="md-nav__icon md-icon"></span>
-          Ok mkdocs docs no merge
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-no-merge/" class="md-nav__link">
-        Don't merge docs folder with other docs
+      <a href="../../examples/ok-source-extract" class="md-nav__link">
+        Extract docs from source
       </a>
     </li>
   
@@ -1000,42 +681,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-no-merge/test/" class="md-nav__link">
-        Test
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-6-3" type="checkbox" id="nav-5-6-3" >
-      
-      <label class="md-nav__link" for="nav-5-6-3">
-        Docs
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Docs" data-md-level="3">
-        <label class="md-nav__title" for="nav-5-6-3">
-          <span class="md-nav__icon md-icon"></span>
-          Docs
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-no-merge/docs/" class="md-nav__link">
-        Hello World
+      <a href="../../examples/ok-with-macros" class="md-nav__link">
+        Extract docs with macros
       </a>
     </li>
   
@@ -1046,134 +693,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-docs-no-merge/docs/draft/" class="md-nav__link">
-        Draft
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-7" type="checkbox" id="nav-5-7" >
-      
-      <label class="md-nav__link" for="nav-5-7">
-        Ok mkdocs ignore site dir
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok mkdocs ignore site dir" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-7">
-          <span class="md-nav__icon md-icon"></span>
-          Ok mkdocs ignore site dir
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-ignore-site-dir/" class="md-nav__link">
-        Hello World
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8" >
-      
-      <label class="md-nav__link" for="nav-5-8">
-        Ok mkdocs readme
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok mkdocs readme" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-8">
-          <span class="md-nav__icon md-icon"></span>
-          Ok mkdocs readme
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-mkdocs-readme/" class="md-nav__link">
-        Only a single readme
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-9" type="checkbox" id="nav-5-9" >
-      
-      <label class="md-nav__link" for="nav-5-9">
-        Ok source extract
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok source extract" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-9">
-          <span class="md-nav__icon md-icon"></span>
-          Ok source extract
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-source-extract/" class="md-nav__link">
-        Extract markdown from a source file
+      <a href="../../examples/ok-with-mkdocstrings" class="md-nav__link">
+        Extract docs with mkdocstrings
       </a>
     </li>
   
@@ -1184,171 +705,9 @@
   
   
     <li class="md-nav__item">
-      <a href="../../examples/ok-source-extract/main/" class="md-nav__link">
-        Main
+      <a href="../../examples/ok-source-with-snippet" class="md-nav__link">
+        Extract a snippet
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-source-extract/module/" class="md-nav__link">
-        Module
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-10" type="checkbox" id="nav-5-10" >
-      
-      <label class="md-nav__link" for="nav-5-10">
-        Ok with macros
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok with macros" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-10">
-          <span class="md-nav__icon md-icon"></span>
-          Ok with macros
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-with-macros/" class="md-nav__link">
-        Use with the macros plugin
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-with-macros/module/" class="md-nav__link">
-        Module
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-11" type="checkbox" id="nav-5-11" >
-      
-      <label class="md-nav__link" for="nav-5-11">
-        Ok with mkdocstrings
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok with mkdocstrings" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-11">
-          <span class="md-nav__icon md-icon"></span>
-          Ok with mkdocstrings
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-with-mkdocstrings/" class="md-nav__link">
-        Use with mkdocstrings
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-with-mkdocstrings/module/" class="md-nav__link">
-        Module
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-12" type="checkbox" id="nav-5-12" >
-      
-      <label class="md-nav__link" for="nav-5-12">
-        Ok with rename
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Ok with rename" data-md-level="2">
-        <label class="md-nav__title" for="nav-5-12">
-          <span class="md-nav__icon md-icon"></span>
-          Ok with rename
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/ok-with-rename/" class="md-nav__link">
-        One-off rename
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1382,7 +741,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1396,7 +755,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#installation" class="md-nav__link">
@@ -1406,30 +765,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
-    Quick start
+  <a href="#settings" class="md-nav__link">
+    Settings
   </a>
   
-    <nav class="md-nav" aria-label="Quick start">
+    <nav class="md-nav" aria-label="Settings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuration-file" class="md-nav__link">
-    Configuration file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build" class="md-nav__link">
-    Build
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-a-local-server" class="md-nav__link">
-    Run a local server
+  <a href="#defaults" class="md-nav__link">
+    Defaults
   </a>
   
 </li>
@@ -1476,6 +821,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#build_docs_dir" class="md-nav__link">
+    build_docs_dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#include_extensions" class="md-nav__link">
     include_extensions
   </a>
@@ -1502,8 +854,7 @@
     destination
   </a>
   
-    <nav class="md-nav" aria-label="destination">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#terminate" class="md-nav__link">
@@ -1546,15 +897,44 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
-  <a href="#standard-behavior" class="md-nav__link">
-    Standard behavior
+  <a href="#semiliterate-example-usage" class="md-nav__link">
+    Semiliterate example usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Semiliterate example usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#c-c-and-javascript" class="md-nav__link">
+    C, C++, and Javascript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yaml-and-dockerfiles" class="md-nav__link">
+    YAML and Dockerfiles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html-and-xml" class="md-nav__link">
+    HTML and xml
+  </a>
   
 </li>
         
@@ -1569,8 +949,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#default-configuration" class="md-nav__link">
-    Default configuration
+  <a href="#build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-a-local-server" class="md-nav__link">
+    Run a local server
   </a>
   
 </li>
@@ -1583,7 +970,7 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
@@ -1602,8 +989,7 @@ in the documentation site.</p>
 <div class="highlight"><pre><span></span><code>pip install mkdocs-simple-plugin
 </code></pre></div>
 <p><em>Python 3.x, 3.5, 3.6, 3.7, 3.8, 3.9 supported.</em></p>
-<h2 id="quick-start">Quick start</h2>
-<h3 id="configuration-file">Configuration file</h3>
+<h2 id="settings">Settings</h2>
 <p>Create a <code>mkdocs.yml</code> file in the root of your directory and add the <code>simple</code>
 plugin to its plugin list.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="s">&quot;My</span><span class="nv"> </span><span class="s">site&quot;</span>
@@ -1611,15 +997,67 @@ plugin to its plugin list.</p>
 <span class="p p-Indicator">-</span> <span class="nt">search</span><span class="p">:</span>
 <span class="p p-Indicator">-</span> <span class="nt">simple</span><span class="p">:</span>
 </code></pre></div>
-<h3 id="build">Build</h3>
-<p>Then, you can build the mkdocs from the command line.</p>
-<div class="highlight"><pre><span></span><code>mkdocs build
+<h3 id="defaults">Defaults</h3>
+<div class="highlight"><pre><span></span><code><span class="nt">include_folders</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="s">&#39;*&#39;</span>
+<span class="nt">ignore_folders</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
+<span class="nt">ignore_hidden</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">merge_docs_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">build_docs_dir</span><span class="p">:</span> <span class="s">&#39;&#39;</span>
+<span class="nt">include_extensions</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.bmp</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.tif</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.tiff</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.gif</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.svg</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.jpeg</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.jpg</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.jif</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.jfif</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.jp2</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.jpx</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.j2k</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.j2c</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.fpx</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pcd</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.png</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pdf</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">CNAME</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.snippet</span>
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pages</span>
+<span class="nt">semiliterate</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">pattern</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">\.py$</span>
+  <span class="nt">extract</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*&quot;&quot;&quot;\W?md\b</span>
+    <span class="nt">stop</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*&quot;&quot;&quot;\s*$</span>
+  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*#+\W?md\b</span>
+    <span class="nt">stop</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*#\s?\/md\s*$</span>
+    <span class="nt">replace</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">^\s*# ?(.*\n?)$</span>
+<span class="p p-Indicator">-</span> <span class="nt">pattern</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">\.(cpp|cc?|hh?|hpp|js|css)$</span>
+  <span class="nt">extract</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*/\*+\W?md\b</span>
+    <span class="nt">stop</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*\*\*/\s*$</span>
+  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*\/\/+\W?md\b</span>
+    <span class="nt">stop</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*\/\/\send\smd\s*$</span>
+    <span class="nt">replace</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">^\s*\/\/\s?(.*\n?)$</span>
+<span class="p p-Indicator">-</span> <span class="nt">pattern</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Dockerfile$|\.(dockerfile|ya?ml)$</span>
+  <span class="nt">extract</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*#+\W?md\b</span>
+    <span class="nt">stop</span><span class="p">:</span> <span class="s">&#39;#\s\/md\s*$&#39;</span>
+    <span class="nt">replace</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">^\s*#?\s?(.*\n?)$</span>
+<span class="p p-Indicator">-</span> <span class="nt">pattern</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">\.(html?|xml)$</span>
+  <span class="nt">extract</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;!--\W?md\b</span>
+    <span class="nt">stop</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">--&gt;\s*$</span>
 </code></pre></div>
-<h3 id="run-a-local-server">Run a local server</h3>
-<p>One of the best parts of mkdocs is the ability to serve (and update!) your
-documentation site locally.</p>
-<div class="highlight"><pre><span></span><code>mkdocs serve
-</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you add your own settings but want to also use any of these, you
+must reiterate the settings you want in your <code>mkdocs.yml</code> file.</p>
+</div>
 <h2 id="configuration-scheme">Configuration scheme</h2>
 <h3 id="include_folders">include_folders</h3>
 <p>Directories whose name matches a glob pattern in this list will be
@@ -1634,6 +1072,9 @@ searched for documentation.</p>
 at the same level as all other documentation.
 Otherwise, the docs directory will be retained as a subdirectory in
 the result.</p>
+<h3 id="build_docs_dir">build_docs_dir</h3>
+<p>If set, the directory where docs will be coallated to be build.
+Otherwise, the build docs directory will be a temporary directory.</p>
 <h3 id="include_extensions">include_extensions</h3>
 <p>Any file in the searched directories whose name contains a string in
 this list will simply be copied to the generated documentation.</p>
@@ -1654,19 +1095,19 @@ original filename, if any, and appending <code>.md</code>. However, if this
 parameter is specified, it will be expanded as a template using
 the match object from matching "pattern" against the filename,
 to produce the name of the destination file.</p>
-<h5 id="terminate">terminate</h5>
+<h4 id="terminate">terminate</h4>
 <p>If specified, all extraction from the file is terminated when
 a line containing this regexp is encountered (whether or not
 any extraction is currently active per the parameters below).
 The last matching group in the <code>terminate</code> expression, if any,
 is written to the destination file; note that "start" and "stop"
 below share that same behavior.</p>
-<h5 id="extract">extract</h5>
+<h4 id="extract">extract</h4>
 <p>This parameter determines what will be extracted from a scanned
 file that matches the pattern above. Its value should be a block
 or list of blocks of settings. Each block determines one mode of
 extraction from the scanned file, and can specify:</p>
-<h6 id="start">start</h6>
+<h5 id="start">start</h5>
 <p>If no mode of extraction is active, and a line in the scanned
 file matches this regexp, then this mode of extraction begins
 with the next line. Only the first mode whose <code>start</code> expression
@@ -1674,12 +1115,17 @@ matches is activated, so at most one mode of extraction can be active
 at any time. When an extraction is active, lines from the scanned
 file are copied to the destination file (possibly modified by
 the "replace" parameter below).</p>
-<h6 id="stop">stop</h6>
+<p>Additionally, start can specify an output path for the extracted
+content. Simply add <code>file=output_path.md</code> to the start token line.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>```&lt;md file=ouput_path.md&gt;
+</code></pre></div>
+<h5 id="stop">stop</h5>
 <p>When this extraction mode is active and a line containing this
 (optional) regexp is encountered, this mode becomes inactive.
 The <code>simple</code> plugin will begin searching for further occurrences
 of <code>start</code> expressions on the <em>next</em> line of the scanned file.</p>
-<h6 id="replace">replace</h6>
+<h5 id="replace">replace</h5>
 <p>The <code>replace</code> parameter allows extracted lines from a file to
 be transformed in simple ways by regular expressions, for
 example to strip leading comment symbols if necessary.</p>
@@ -1703,49 +1149,56 @@ are checked.</p>
 parameter is active beginning with the first line of the scanned file;
 there is no way such a mode can be reactivated if it stops.
 This convention allows for convenient "front-matter" extraction.</p>
-<h5 id="standard-behavior">Standard behavior</h5>
-<p>The default semiliterate patterns invoke the following automatic
-extraction of markdown content from your source files: (Note that if
-you add your own semiliterate patterns but want to also use any of
-these, you must reiterate the default pattern or patterns you want in
-your <code>mkdocs.yml</code> file.)</p>
-<h2 id="default-configuration">Default configuration</h2>
-<div class="highlight"><pre><span></span><code><span class="nt">include_folders</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="s">&#39;*&#39;</span>
-<span class="nt">ignore_folders</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
-<span class="nt">ignore_hidden</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="nt">merge_docs_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="nt">include_extensions</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.yml</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.png</span>
-<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">.pages</span>
-<span class="nt">semiliterate</span><span class="p">:</span>
-<span class="p p-Indicator">-</span> <span class="nt">pattern</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">\.py$</span>
-  <span class="nt">extract</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*&quot;&quot;&quot;\W?md\b</span>
-    <span class="nt">stop</span><span class="p">:</span> <span class="s">&#39;&quot;&quot;&quot;\s*$&#39;</span>
-  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*#+\W?md\b</span>
-    <span class="nt">stop</span><span class="p">:</span> <span class="s">&#39;#\s\/md\s*$&#39;</span>
-    <span class="nt">replace</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">^\s*# ?(.*\n?)$</span>
-<span class="p p-Indicator">-</span> <span class="nt">pattern</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">\.(cpp|cc?|hh?|hpp|js|css)$</span>
-  <span class="nt">extract</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*/\*+\W?md\b</span>
-    <span class="nt">stop</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">\*\*/\s*$</span>
-  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*\/\/+\W?md\b</span>
-    <span class="nt">stop</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">\/\/\send\smd\s*$</span>
-    <span class="nt">replace</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">^\s*\/\/\s?(.*\n?)$</span>
-<span class="p p-Indicator">-</span> <span class="nt">pattern</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Dockerfile$|\.(dockerfile|ya?ml)$</span>
-  <span class="nt">extract</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">^\s*#+\W?md\b</span>
-    <span class="nt">stop</span><span class="p">:</span> <span class="s">&#39;#\s\/md\s*$&#39;</span>
-    <span class="nt">replace</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">^\s*#?\s?(.*\n?)$</span>
-<span class="p p-Indicator">-</span> <span class="nt">pattern</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">\.(html?|xml)$</span>
-  <span class="nt">extract</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">start</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;!--\W?md\b</span>
-    <span class="nt">stop</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">--&gt;\s*$</span>
+<h3 id="semiliterate-example-usage">Semiliterate example usage</h3>
+<h4 id="python">Python</h4>
+<p>block comments starting with: <code>"""md</code></p>
+<div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot;md</span>
+<span class="sd">This is a documentation comment.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
+<p>line comments starting with:
+<code># md</code> and ending with <code># /md</code>
+strip leading spaces and `#``</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># md</span>
+<span class="c1"># This is a documentation comment.</span>
+<span class="c1"># /md</span>
+</code></pre></div>
+<h4 id="c-c-and-javascript">C, C++, and Javascript</h4>
+<p>block comments starting with: <code>/** md</code></p>
+<div class="highlight"><pre><span></span><code><span class="cm">/** md</span>
+<span class="cm">This is a documentation comment.</span>
+<span class="cm">**/</span>
+</code></pre></div>
+<p>in line comments starting with
+<code>// md</code>, ending with <code>// end md</code>
+strip leading spaces and <code>//</code></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// md</span>
+<span class="c1">// This is a documentation comment.</span>
+<span class="c1">// end md</span>
+</code></pre></div>
+<h4 id="yaml-and-dockerfiles">YAML and Dockerfiles</h4>
+<p>line-comment blocks starting with
+<code># md</code> and ending with <code># /md</code>
+strip leading spaces and <code>#</code></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># md</span>
+<span class="c1"># This is a documentation comment.</span>
+<span class="c1"># /md</span>
+</code></pre></div>
+<h4 id="html-and-xml">HTML and xml</h4>
+<p>line-comment blocks starting with
+<code>&lt;!-- md</code> and ending with <code>--&gt;</code></p>
+<div class="highlight"><pre><span></span><code><span class="c">&lt;!-- md </span>
+<span class="c">This is a documentation comment.</span>
+<span class="c">--&gt;</span>
+</code></pre></div>
+<h2 id="build">Build</h2>
+<p>Then, you can build the mkdocs from the command line.</p>
+<div class="highlight"><pre><span></span><code>mkdocs build
+</code></pre></div>
+<h2 id="run-a-local-server">Run a local server</h2>
+<p>One of the best parts of mkdocs is the ability to serve (and update!) your
+documentation site locally.</p>
+<div class="highlight"><pre><span></span><code>mkdocs serve
 </code></pre></div>
                 
               
@@ -1762,40 +1215,38 @@ your <code>mkdocs.yml</code> file.)</p>
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../generator/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../generator/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Mkdocs Simple Generator
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Mkdocs Simple Generator
-              </div>
+          </div>
+        </a>
+      
+      
+        <a href="../" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Developing
             </div>
-          </a>
-        
-        
-          <a href="../" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Developing
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1805,6 +1256,7 @@ your <code>mkdocs.yml</code> file.)</p>
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
         </a>
+        
       </div>
       
   <div class="md-footer-social">
@@ -1843,19 +1295,13 @@ your <code>mkdocs.yml</code> file.)</p>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
     
-      <script src="../../assets/javascripts/vendor.18f0862e.min.js"></script>
-      <script src="../../assets/javascripts/bundle.994580cf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: "../..",
-          features: [],
-          search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../../assets/javascripts/bundle.a1c7c35e.min.js"></script>
       
     
   </body>
