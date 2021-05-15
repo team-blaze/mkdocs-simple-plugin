@@ -1,0 +1,52 @@
+### Different Python versions
+
+You can even test the package with different versions of python in a container
+by running the test_local script.  This builds a docker container with the 
+version of python you specify and runs the integration tests within the 
+container. 
+
+```bash
+./tests/test_local.sh
+```
+{% include "versions.snippet" %}
+
+### Integration tests
+
+Integration testing allows the plugin to be tested with mkdocs using example
+configurations.
+
+Integration testing uses bats, install it with
+
+```bash
+sudo apt-get install bats
+```
+Then run the tests
+
+```bash
+./tests/test.sh
+```
+
+#### Manual Testing
+
+To run manually, first you need to generate the readmes
+
+```bash
+./examples/gen_readme.py
+```
+
+Then run the bats script
+
+```bash
+./tests/test.bats
+```
+
+### Lint
+
+Linting helps maintain style consistency.  This package follows the [google 
+style guide](https://google.github.io/styleguide/pyguide.html).  Conformity
+is enforced with flake8 and pydodstyle.
+
+```bash
+./tests/test_lint.sh
+```
+

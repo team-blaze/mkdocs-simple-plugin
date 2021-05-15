@@ -1,10 +1,4 @@
 #!/usr/bin/env bats
-
-##
-# Install the mkdocs-simple-plugin locally on test run.
-#
-pip install -e . --quiet >&2
-
 ##
 # These are helper variables and functions written in Bash. It's like writing in your Terminal!
 # Feel free to optimize these, or even run them in your own Terminal.
@@ -39,6 +33,7 @@ assertGen() {
         cp mkdocs-test.yml mkdocs.yml
     fi
     run mkdocs_simple_gen
+    check_site_name
     run mkdocs build --verbose
     debugger
     [ "$status" -eq 0 ]
@@ -83,6 +78,13 @@ assertParGrep() {
     cat site/$1.grepout
     echo "--------------"
     [ "$status" -eq 0 ]
+}
+
+check_site_name() {
+    site_name=$(cat mkdocs.yml | sed -n 's/site_name: \(.*\)/\1/p')
+    directory_name=${PWD##*/}
+    echo "mkdocs site_name: $site_name, directory: $directory_name"
+    [ "$site_name" == "$directory_name" ]
 }
 
 ##
