@@ -1,6 +1,4 @@
 site_name: athackst/mkdocs-simple-plugin
-site_url: https://athackst.github.io/mkdocs-simple-plugin
-repo_url: https://github.com/athackst/mkdocs-simple-plugin
 docs_dir: /tmp/mkdocs-simple/mkdocs-simple-plugin
 plugins:
   - search
@@ -13,6 +11,9 @@ plugins:
         - .sh
   - macros
   - awesome-pages
+edit_uri: ''
+site_url: https://athackst.github.io/mkdocs-simple-plugin
+repo_url: https://github.com/athackst/mkdocs-simple-plugin
 theme:
   name: material
   palette:
@@ -34,4 +35,3 @@ extra:
       link: https://hub.docker.com/u/athackst
     - icon: fontawesome/regular/laugh
       link: https://allisonthackston.com
-edit_uri: ''
