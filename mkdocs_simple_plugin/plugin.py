@@ -122,6 +122,11 @@ class SimplePlugin(BasePlugin):
         # (eg last modified time) are preserved.
         ("preserve_file_stats", config_options.Type(bool, default=False)),
 
+        # ### root_dir
+        # If true, when files are copied to local directories the file stats
+        # (eg last modified time) are preserved.
+        ("root_dir", config_options.Type(str, default=".")),
+
         # ### include_extensions
         # Any file in the searched directories whose name contains a string in
         # this list will simply be copied to the generated documentation.
@@ -292,6 +297,7 @@ class SimplePlugin(BasePlugin):
         self.include_folders = self.config['include_folders']
         self.ignore_folders = self.config['ignore_folders']
         self.preserve_file_stats = self.config["preserve_file_stats"]
+        self.root_dir = self.config["root_dir"]
         self.ignore_hidden = self.config['ignore_hidden']
         self.include_extensions = utils.markdown_extensions + \
             self.config['include_extensions']
@@ -367,7 +373,7 @@ class SimplePlugin(BasePlugin):
     def build_docs(self):
         """Build the docs directory from workspace files."""
         paths = []
-        for root, directories, files in os.walk("."):
+        for root, directories, files in os.walk(self.root_dir):
             if self.in_include_directory(root):
                 document_root = self.build_docs_dir + root[1:]
                 for f in files:
