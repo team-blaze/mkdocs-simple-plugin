@@ -117,6 +117,11 @@ class SimplePlugin(BasePlugin):
         # Otherwise, the build docs directory will be a temporary directory.
         ('build_docs_dir', config_options.Type(str, default='')),
 
+        # ### preserve_file_stats
+        # If true, when files are copied to local directories the file stats
+        # (eg last modified time) are preserved.
+        ("preserve_file_stats", config_options.Type(bool, default=False)),
+
         # ### include_extensions
         # Any file in the searched directories whose name contains a string in
         # this list will simply be copied to the generated documentation.
