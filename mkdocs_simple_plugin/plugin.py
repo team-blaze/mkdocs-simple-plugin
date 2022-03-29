@@ -286,6 +286,7 @@ class SimplePlugin(BasePlugin):
         config['docs_dir'] = self.build_docs_dir
         self.include_folders = self.config['include_folders']
         self.ignore_folders = self.config['ignore_folders']
+        self.preserve_file_stats = self.config["preserve_file_stats"]
         self.ignore_hidden = self.config['ignore_hidden']
         self.include_extensions = utils.markdown_extensions + \
             self.config['include_extensions']
@@ -383,7 +384,11 @@ class SimplePlugin(BasePlugin):
             new_file = os.path.join(destination_directory, name)
             try:
                 os.makedirs(destination_directory, exist_ok=True)
-                shutil.copy(original, new_file)
+                # If desired, use copy2 to preserve file stats
+                if self.preserve_file_stats:
+                    shutil.copy2(original, new_file)
+                else:
+                    shutil.copy(original, new_file)
                 utils.log.debug("mkdocs-simple-plugin: {} --> {}".format(
                     original, new_file))
                 return True
@@ -410,6 +415,8 @@ class SimplePlugin(BasePlugin):
         """Copy all files from source to destination directory."""
         if sys.version_info >= (3, 8):
             # pylint: disable=unexpected-keyword-arg
+            # Note that copytree uses copy2 under the hood, and so by default
+            # file stats are preserved
             shutil.copytree(root_source_directory,
                             root_destination_directory,
                             dirs_exist_ok=True)
@@ -426,7 +433,11 @@ class SimplePlugin(BasePlugin):
                                                     file_)
                     if os.path.exists(destination_file):
                         os.remove(destination_file)
-                    shutil.copy(source_file, destination_directory)
+                    # If desired, use copy2 to preserve file stats
+                    if self.preserve_file_stats:
+                        shutil.copy2(source_file, destination_directory)
+                    else:
+                        shutil.copy(source_file, destination_directory)
                     utils.log.debug(
                         "mkdocs-simple-plugin: {}/* --> {}/*".format(
                             source_file, destination_file))
