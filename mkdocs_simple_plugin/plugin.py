@@ -367,7 +367,7 @@ class SimplePlugin(BasePlugin):
     def build_docs(self):
         """Build the docs directory from workspace files."""
         paths = []
-        for root, directories, files in os.walk(.):
+        for root, directories, files in os.walk("."):
             if self.in_include_directory(root):
                 document_root = self.build_docs_dir + root[1:]
                 for f in files:
