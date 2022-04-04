@@ -374,10 +374,7 @@ class SimplePlugin(BasePlugin):
         """Build the docs directory from workspace files."""
         paths = []
         for root, directories, files in os.walk(self.root_dir):
-            utils.log.info("mkdocs-simple-plugin: root is: {}".format(
-            root))
             if self.in_include_directory(root):
-                utils.log.info("mkdocs-simple-plugin: found match")
                 document_root = self.build_docs_dir + root[1:]
                 for f in files:
                     copied = self.copy_file(root, f, document_root)
